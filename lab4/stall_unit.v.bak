@@ -1,0 +1,75 @@
+
+// *******************************************************************
+//                         Stalling Unit
+// *******************************************************************
+
+module stall_unit(IF_pc, EX_MemRead, EX_rt, ID_rs, ID_rt, 
+  ID_RegDst_in, ID_ALUOp_in, ID_ALUSrc_in, ID_Branch_in, ID_MemRead_in, ID_MemWrite_in, ID_RegWrite_in, ID_MemtoReg_in, IF_pc4_in,
+  ID_RegDst, ID_ALUOp, ID_ALUSrc, ID_Branch, ID_MemRead, ID_MemWrite, ID_RegWrite, ID_MemtoReg, IF_pc4); //, ID_pc4, EX_pc4);
+
+input EX_MemRead;
+input [31:0] IF_pc;
+input [4:0]  EX_rt, ID_rs, ID_rt;
+
+input ID_RegDst_in, ID_ALUOp_in, ID_ALUSrc_in, ID_Branch_in, ID_MemRead_in, ID_MemWrite_in, ID_RegWrite_in, ID_MemtoReg_in, IF_pc4_in;
+input [1:0] ID_ALUOp_in;
+input [31:0] IF_pc4_in;
+
+output ID_RegDst, ID_ALUSrc, ID_Branch, ID_MemRead, ID_MemWrite, ID_RegWrite, ID_MemtoReg;
+output [1:0]  ID_ALUOp;
+output [31:0] IF_pc4;  //, ID_pc4, EX_pc4;
+
+reg ID_RegDst, ID_ALUSrc, ID_Branch,  ID_MemRead, ID_MemWrite, ID_RegWrite, ID_MemtoReg;
+reg [1:0]   ID_ALUOp;
+reg [31:0]  IF_pc4; //, ID_pc4, EX_pc4;
+
+always @(*)
+    if((EX_MemRead == 1'b1) && ((EX_rt == ID_rs) || (EX_rt == ID_rt)))
+      begin
+        //stall
+        //zero control signals
+        ID_RegDst     <= 0;
+        ID_ALUOp      <= 0;
+        ID_ALUSrc     <= 0;  
+        ID_Branch     <= 0;
+        ID_MemRead    <= 0;
+        ID_MemWrite   <= 0;
+        ID_RegWrite   <= 0;
+        ID_MemtoReg   <= 0;
+        ID_RegDst     <= 0;
+        ID_ALUOp      <= 0;
+        ID_ALUSrc     <= 0;
+        ID_Branch     <= 0;
+        ID_MemRead    <= 0;
+        ID_MemWrite   <= 0;
+        ID_RegWrite   <= 0;
+        ID_MemtoReg   <= 0;
+    
+        //keep pc4 from incrementing
+        IF_pc4        <= IF_pc;
+        //ID_pc4        <= IF_pc;
+        //EX_pc4        <= IF_pc;
+        $display("Entered if statement");
+      end
+    else
+      begin
+        ID_RegDst     <= ID_RegDst_in;
+        ID_ALUOp      <= ID_ALUOp_in;
+        ID_ALUSrc     <= ID_ALUSrc_in;  
+        ID_Branch     <= ID_Branch_in;
+        ID_MemRead    <= ID_MemRead_in;
+        ID_MemWrite   <= ID_MemWrite_in;
+        ID_RegWrite   <= ID_RegWrite_in;
+        ID_MemtoReg   <= ID_MemtoReg_in;
+        ID_RegDst     <= ID_RegDst_in;
+        ID_ALUOp      <= ID_ALUOp_in;
+        ID_ALUSrc     <= ID_ALUSrc_in;
+        ID_Branch     <= ID_Branch_in;
+        ID_MemRead    <= ID_MemRead_in;
+        ID_MemWrite   <= ID_MemWrite_in;
+        ID_RegWrite   <= ID_RegWrite_in;
+        ID_MemtoReg   <= ID_MemtoReg_in;        
+      end
+      
+endmodule
+ 

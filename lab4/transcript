@@ -1,0 +1,1107 @@
+# //  ModelSim SE 6.6a Mar 19 2010 Linux 2.6.18-194.11.4.el5
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project lab4
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v failed with 1 errors.
+# Compile of stall_unit.v was successful.
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -novopt work.proj4_testbench
+# vsim -novopt work.proj4_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'IF_pc'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (5) for port 'EX_rt'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (5) for port 'ID_rs'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (5) for port 'ID_rt'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'ID_ALUOp'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'IF_pc4'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'ID_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'ID_pc4'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'EX_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'EX_pc4'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v(6).
+#         Region: /proj4_testbench/m1/STALL
+# Error loading design
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v failed with 1 errors.
+# 13 compiles, 1 failed with 1 error. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -novopt work.proj4_testbench
+# vsim -novopt work.proj4_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'ID_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'EX_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# Error loading design
+# No wave window is currently open
+# No wave window is currently open
+# No wave window is currently open
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -novopt work.proj4_testbench
+# vsim -novopt work.proj4_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'ID_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# ** Error: (vsim-3053) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Illegal output or inout output or inout port connection for port 'EX_pc4'.
+#         Region: /proj4_testbench/m1/STALL
+# Error loading design
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v failed with 1 errors.
+# 13 compiles, 1 failed with 1 error. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -novopt work.proj4_testbench
+# vsim -novopt work.proj4_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+# ** Fatal: (vsim-3365) /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v(322): Too many port connections. Expected 14, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /proj4_testbench/m1/STALL File: /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v
+# FATAL ERROR while loading design
+# Error loading design
+# No wave window is currently open
+# No wave window is currently open
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim -novopt work.proj4_testbench
+# vsim -novopt work.proj4_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+add wave \
+{sim:/proj4_testbench/m1/clk } \
+{sim:/proj4_testbench/m1/IF_pc } \
+{sim:/proj4_testbench/m1/IF_pc_next } \
+{sim:/proj4_testbench/m1/ID_rs } \
+{sim:/proj4_testbench/m1/ID_rt } \
+{sim:/proj4_testbench/m1/ID_rd } \
+{sim:/proj4_testbench/m1/EX_rt } \
+{sim:/proj4_testbench/m1/EX_rd } \
+{sim:/proj4_testbench/m1/EX_rs } \
+{sim:/proj4_testbench/m1/ForwardA } \
+{sim:/proj4_testbench/m1/ForwardB } \
+{sim:/proj4_testbench/m1/EX_fw_a_out } \
+{sim:/proj4_testbench/m1/EX_fw_b_out } 
+add wave \
+{sim:/proj4_testbench/m1/RFILE/file_array[3] } \
+{sim:/proj4_testbench/m1/RFILE/file_array[2] } 
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave \
+{sim:/proj4_testbench/m1/EX_MemRead } 
+restart
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: rom32[00000000] => 00001020
+run
+#                 2500 reading data: rom32[00000004] => 00021820
+run
+#                 3500 reg_file[ 2] =>          x (Port 2)
+#                 3500 reading data: rom32[00000008] => 08000000
+run
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reading data: rom32[0000000c] => 00000000
+run
+#                 5500 reading data: rom32[00000000] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000004] => 00021820
+run
+#                 7500 reg_file[ 3] <=          0 (Write)
+#                 7500 reading data: rom32[00000008] => 08000000
+#                 7500 reg_file[ 2] =>          0 (Port 2)
+run
+#                 8500 reg_file[ 0] =>          0 (Port 2)
+#                 8500 reading data: rom32[0000000c] => 00000000
+run
+#                 9500 reading data: rom32[00000000] => 00001020
+run
+#                10500 reg_file[ 2] <=          0 (Write)
+#                10500 reading data: rom32[00000004] => 00021820
+run
+#                11500 reg_file[ 3] <=          0 (Write)
+#                11500 reg_file[ 2] =>          0 (Port 2)
+#                11500 reading data: rom32[00000008] => 08000000
+run
+#                12500 reg_file[ 0] =>          0 (Port 2)
+#                12500 reading data: rom32[0000000c] => 00000000
+run
+#                13500 reading data: rom32[00000000] => 00001020
+run
+#                14500 reg_file[ 2] <=          0 (Write)
+#                14500 reading data: rom32[00000004] => 00021820
+run
+#                15500 reg_file[ 3] <=          0 (Write)
+#                15500 reg_file[ 2] =>          0 (Port 2)
+#                15500 reading data: rom32[00000008] => 08000000
+run
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reading data: rom32[0000000c] => 00000000
+run
+#                17500 reading data: rom32[00000000] => 00001020
+run
+#                18500 reg_file[ 2] <=          0 (Write)
+#                18500 reading data: rom32[00000004] => 00021820
+run
+#                19500 reg_file[ 3] <=          0 (Write)
+#                19500 reg_file[ 2] =>          0 (Port 2)
+#                19500 reading data: rom32[00000008] => 08000000
+run
+#                20500 reg_file[ 0] =>          0 (Port 2)
+#                20500 reading data: rom32[0000000c] => 00000000
+run
+#                21500 reading data: rom32[00000000] => 00001020
+run
+#                22500 reg_file[ 2] <=          0 (Write)
+#                22500 reading data: rom32[00000004] => 00021820
+run
+#                23500 reg_file[ 3] <=          0 (Write)
+#                23500 reg_file[ 2] =>          0 (Port 2)
+#                23500 reading data: rom32[00000008] => 08000000
+run
+#                24500 reg_file[ 0] =>          0 (Port 2)
+#                24500 reading data: rom32[0000000c] => 00000000
+run
+#                25500 reading data: rom32[00000000] => 00001020
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: rom32[00000000] => 00001020
+run
+#                 2500 reading data: rom32[00000004] => 00021820
+run
+#                 3500 reg_file[ 2] =>          x (Port 2)
+#                 3500 reading data: rom32[00000008] => 08000000
+run
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reading data: rom32[0000000c] => 00000000
+run
+#                 5500 reading data: rom32[00000000] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000004] => 00021820
+run
+#                 7500 reg_file[ 3] <=          0 (Write)
+#                 7500 reading data: rom32[00000008] => 08000000
+#                 7500 reg_file[ 2] =>          0 (Port 2)
+run
+#                 8500 reg_file[ 0] =>          0 (Port 2)
+#                 8500 reading data: rom32[0000000c] => 00000000
+run
+#                 9500 reading data: rom32[00000000] => 00001020
+run
+#                10500 reg_file[ 2] <=          0 (Write)
+#                10500 reading data: rom32[00000004] => 00021820
+run
+#                11500 reg_file[ 3] <=          0 (Write)
+#                11500 reg_file[ 2] =>          0 (Port 2)
+#                11500 reading data: rom32[00000008] => 08000000
+run
+#                12500 reg_file[ 0] =>          0 (Port 2)
+#                12500 reading data: rom32[0000000c] => 00000000
+run
+#                13500 reading data: rom32[00000000] => 00001020
+run
+#                14500 reg_file[ 2] <=          0 (Write)
+#                14500 reading data: rom32[00000004] => 00021820
+run
+#                15500 reg_file[ 3] <=          0 (Write)
+#                15500 reg_file[ 2] =>          0 (Port 2)
+#                15500 reading data: rom32[00000008] => 08000000
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: rom32[00000000] => 00001020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: rom32[00000000] => 00001020
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v failed with 1 errors.
+# 13 compiles, 1 failed with 1 error. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+# Load canceled
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_pipeline.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# Compile of mux4.v was successful.
+# Compile of stall_unit.v was successful.
+# 13 compiles, 0 failed with no errors. 
+restart
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.proj4_testbench
+# Loading work.proj4_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mips_pipeline
+# Loading work.mips_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.control_pipeline
+# Loading work.control_pipeline
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mux4
+# Loading work.mux4
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.alu_ctl
+# Loading work.alu_ctl
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab4/work.stall_unit
+# Loading work.stall_unit
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+# Entered else statement
+run
+# Entered else statement
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave \
+{sim:/proj4_testbench/m1/ID_pc4 } 
+add wave \
+{sim:/proj4_testbench/m1/IF_pc4 } 
+restart
+run
+# Error in selection
+# Error in selection
+run
+#                 1500 reading data: rom32[00000000] => 00001020
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+# Entered else statement
+run
+# Entered else statement
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

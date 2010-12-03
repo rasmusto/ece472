@@ -1,0 +1,15 @@
+/nfs/farm/u2/r/rasmusto/ece472/ripple_adder.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/ripple_adder.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module fulladder
+-- Compiling module ripple_adder
+-- Compiling module proj1_testbench
+-- Compiling module ripple_adder_LA
+-- Compiling module fulladder_LA
+-- Compiling module lookahead
+-- Compiling module add16_LA
+
+Top level modules:
+	ripple_adder
+	proj1_testbench
+
+} {} {}}

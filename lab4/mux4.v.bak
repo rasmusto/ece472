@@ -1,0 +1,16 @@
+//4-to-1 MUX://
+module mux4(sel, a, b, c, d, y);
+  input [31:0] a,b,c,d;
+  input [1:0] sel;
+  output [31:0] y;
+  reg [31:0] y;
+
+  always@(a or b or c or d or y)
+  case (sel)
+    0:  y=a;
+    1:  y=b;
+    2:  y=c;
+    3:  y=d;
+  default: $display("Error in selection");
+  endcase
+endmodule

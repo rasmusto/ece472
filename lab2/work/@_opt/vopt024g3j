@@ -1,0 +1,136 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/nfs/farm/u2/r/rasmusto/ece472
+T_opt
+Z1 VHLW3LaNHz^z8QVXE4YYWM0
+Z2 04 15 4 work proj1_testbench fast 0
+Z3 =1-001e680f9a8a-4caf6711-edae1-b0d
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6a;45
+Z7 d/nfs/farm/u2/r/rasmusto/ece472
+vadd16_LA
+Z8 I<en`JlH]jOIRnUV<CGIHA0
+Z9 Ve=h:?QNz:b`dn:W_>@5dH0
+Z10 d/nfs/farm/u2/r/rasmusto/ece472/lab2
+Z11 w1286563586
+Z12 8/nfs/farm/u2/r/rasmusto/ece472/lab2/alu_design.v
+Z13 F/nfs/farm/u2/r/rasmusto/ece472/lab2/alu_design.v
+Z14 L0 105
+Z15 OE;L;6.6a;45
+r1
+31
+Z16 !s102 -nocovercells
+Z17 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z18 nadd16_@l@a
+Z19 !s100 >H;kn5QWCMLCa1`<k:8PT1
+!s85 0
+vfulladder
+Z20 I20PGPXP:b;E:<V9S5TKJR1
+Z21 V[AzSOlA@mi7[J<:`b^I]X3
+R10
+R11
+R12
+R13
+L0 1
+R15
+r1
+31
+R16
+R17
+Z22 !s100 He?i84?<@8Y[3Yf=IPFl^3
+!s85 0
+vfulladder_LA
+Z23 Il@DW^A]1ai[=kA1AF[hE?1
+Z24 V:_1njKIMEBCzj>hlKA_ME2
+R10
+R11
+R12
+R13
+L0 82
+R15
+r1
+31
+R16
+R17
+Z25 nfulladder_@l@a
+Z26 !s100 mRlIhX2NBI=b8`1k7X2Og0
+!s85 0
+vlookahead
+Z27 I3UXU6S33i`Oi02UC92TQR3
+Z28 VE>=PWhHHF@F4TM0I<d09B2
+R10
+R11
+R12
+R13
+L0 91
+R15
+r1
+31
+R16
+R17
+Z29 !s100 5AlKnnGXmP^H2fj0QZTl32
+!s85 0
+vmux4
+Z30 I[:H23TaVfWY::b4Cll5Qc3
+Z31 VG<fAc?8WK6ZWNgWkiMHdl2
+R10
+R11
+R12
+R13
+Z32 L0 128
+R15
+r1
+31
+R16
+R17
+Z33 !s100 ^4no8nneohLA<MnUiS>oS0
+!s85 0
+vproj1_testbench
+Z34 IBN]CPjJ9HjOO?mkDN[9G81
+Z35 Vo<L>jm?UoX?TjPOYQH2cd1
+R10
+R11
+R12
+R13
+L0 32
+R15
+r1
+31
+R16
+R17
+Z36 !s100 PDSd:5AQf=E^WaXbkDQ5T1
+!s85 0
+vripple_adder
+Z37 IVHMnj2=BdhLD3CWCDlGGO3
+Z38 V^7`_:FcnkSi9?dl5<F8hW2
+R10
+R11
+R12
+R13
+L0 8
+R15
+r1
+31
+R16
+R17
+Z39 !s100 =lfmX7z@`]om:F=1AA^]H0
+!s85 0
+vripple_adder_LA
+Z40 I]Q:f2]Il[l]3[ZchLf[MA1
+Z41 VcTMS6;0EJ8GoBXAFd5DZT2
+R10
+R11
+R12
+R13
+L0 63
+R15
+r1
+31
+R16
+R17
+Z42 nripple_adder_@l@a
+Z43 !s100 >@;K1<VHz>Y@>^cJ`dgoF2
+!s85 0

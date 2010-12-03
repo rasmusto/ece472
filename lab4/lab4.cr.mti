@@ -1,0 +1,92 @@
+/nfs/farm/u2/r/rasmusto/ece472/lab4/alu_ctl.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/alu_ctl.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module alu_ctl
+
+Top level modules:
+	alu_ctl
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/mux2.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/mux2.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/reg_file.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/reg_file.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/mips_pipeline.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mips_pipeline
+
+Top level modules:
+	mips_pipeline
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/mux4.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/mux4.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/alu.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/alu.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/rom32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/rom32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module rom32
+
+Top level modules:
+	rom32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/reg32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/reg32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module reg32
+
+Top level modules:
+	reg32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/mem32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/mem32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mem32
+
+Top level modules:
+	mem32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/control_pipeline.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/control_pipeline.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module control_pipeline
+
+Top level modules:
+	control_pipeline
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/add32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/add32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module add32
+
+Top level modules:
+	add32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/stall_unit.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module stall_unit
+
+Top level modules:
+	stall_unit
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab4/testbench.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab4/testbench.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module proj4_testbench
+
+Top level modules:
+	proj4_testbench
+
+} {} {}}

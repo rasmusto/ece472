@@ -1,0 +1,22 @@
+/nfs/farm/u2/r/rasmusto/ece472/lab2/alu_design.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab2/alu_design.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module proj2_testbench
+-- Compiling module ALU_slice
+-- Compiling module ALU_slice_MSB
+-- Compiling module ALU16
+-- Compiling module ALU_slice_CLA
+-- Compiling module ALU_slice_CLA_MSB
+-- Compiling module ALU16_CLA
+-- Compiling module mux4
+-- Compiling module ripple_adder_LA
+-- Compiling module fulladder_LA
+-- Compiling module lookahead
+-- Compiling module fulladder
+-- Compiling module ripple_adder
+
+Top level modules:
+	proj2_testbench
+	ALU16
+	ripple_adder
+
+} {} {}}

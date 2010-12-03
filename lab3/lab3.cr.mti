@@ -1,0 +1,78 @@
+/nfs/farm/u2/r/rasmusto/ece472/lab3/alu_ctl.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/alu_ctl.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module alu_ctl
+
+Top level modules:
+	alu_ctl
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/mem32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/mem32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mem32
+
+Top level modules:
+	mem32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/testbench.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/testbench.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module proj3_testbench
+
+Top level modules:
+	proj3_testbench
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/reg_file.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/reg_file.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module mips_single
+
+Top level modules:
+	mips_single
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/control_single.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/control_single.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module control_single
+
+Top level modules:
+	control_single
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/add32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/add32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module add32
+
+Top level modules:
+	add32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/alu.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/alu.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/reg32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/reg32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module reg32
+
+Top level modules:
+	reg32
+
+} {} {}} /nfs/farm/u2/r/rasmusto/ece472/lab3/rom32.v {1 {vlog -work work -vopt -nocovercells /nfs/farm/u2/r/rasmusto/ece472/lab3/rom32.v
+Model Technology ModelSim SE vlog 6.6a Compiler 2010.03 Mar 19 2010
+-- Compiling module rom32
+
+Top level modules:
+	rom32
+
+} {} {}}

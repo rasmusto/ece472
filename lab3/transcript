@@ -1,0 +1,2523 @@
+# //  ModelSim SE 6.6a Mar 19 2010 Linux 2.6.18-194.11.4.el5
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project lab3
+# Compile of mips_single.v failed with 1 errors.
+# Compile of mips_single.v failed with 1 errors.
+# Compile of mips_single.v failed with 1 errors.
+# Compile of mips_single.v was successful.
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.add32
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.rom32
+# Loading work.mem32
+# Loading work.mux2
+# Loading work.control_single
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => xxxxxxxx
+#                24500 reg_file[ x] =>          x (Port 2)
+#                24500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                25500 reading data: rom32[00000024] => xxxxxxxx
+run
+#                26500 reading data: rom32[00000028] => xxxxxxxx
+run
+#                27500 reading data: rom32[0000002c] => xxxxxxxx
+run
+#                28500 reading data: rom32[00000030] => xxxxxxxx
+run
+#                29500 reading data: rom32[00000034] => xxxxxxxx
+run
+#                30500 reading data: rom32[00000038] => xxxxxxxx
+run
+#                31500 reading data: rom32[0000003c] => xxxxxxxx
+run
+#                32500 reading data: rom32[00000040] => xxxxxxxx
+run
+#                33500 reading data: rom32[00000044] => xxxxxxxx
+run
+#                34500 reading data: rom32[00000048] => xxxxxxxx
+run
+#                35500 reading data: rom32[0000004c] => xxxxxxxx
+run
+#                36500 reading data: rom32[00000050] => xxxxxxxx
+run
+#                37500 reading data: rom32[00000054] => xxxxxxxx
+run
+#                38500 reading data: rom32[00000058] => xxxxxxxx
+run
+#                39500 reading data: rom32[0000005c] => xxxxxxxx
+run
+#                40500 reading data: rom32[00000060] => xxxxxxxx
+run
+#                41500 reading data: rom32[00000064] => xxxxxxxx
+run
+#                42500 reading data: rom32[00000068] => xxxxxxxx
+run
+#                43500 reading data: rom32[0000006c] => xxxxxxxx
+run
+#                44500 reading data: rom32[00000070] => xxxxxxxx
+run
+#                45500 reading data: rom32[00000074] => xxxxxxxx
+run
+#                46500 reading data: rom32[00000078] => xxxxxxxx
+run
+#                47500 reading data: rom32[0000007c] => xxxxxxxx
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of mips_single.v was successful.
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.add32
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.rom32
+# Loading work.mem32
+# Loading work.mux2
+# Loading work.control_single
+# Loading work.alu_ctl
+# Compile of mips_single.v was successful.
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.add32
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.rom32
+# Loading work.mem32
+# Loading work.mux2
+# Loading work.control_single
+# Loading work.alu_ctl
+# window name "hteSearch" already exists in parent
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/reset } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+# Compile of control_single.v was successful.
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Compile of mips_single.v was successful.
+# Compile of mips_single.v was successful.
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/jump_out } \
+{sim:/proj3_testbench/m1/Jump } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => xxxxxxxx
+#                24500 reg_file[ x] =>          x (Port 2)
+#                24500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/Jump } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 0aaaaaaa
+#                24500 reg_file[10] =>          x (Port 2)
+#                24500 reg_file[21] =>          x (Port 1)
+run
+#                25500 reading data: rom32[00000024] => xxxxxxxx
+#                25500 reg_file[ x] =>          x (Port 2)
+#                25500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                26500 reading data: rom32[00000028] => xxxxxxxx
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/jump_out } \
+{sim:/proj3_testbench/m1/Jump } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 0aaaaaaa
+#                24500 reg_file[10] =>          x (Port 2)
+#                24500 reg_file[21] =>          x (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 08000000
+#                24500 reg_file[ 0] =>          0 (Port 2)
+run
+#                25500 reading data: rom32[00000024] => xxxxxxxx
+#                25500 reg_file[ x] =>          x (Port 2)
+#                25500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 08000000
+#                24500 reg_file[ 0] =>          0 (Port 2)
+run
+#                25500 reading data: rom32[00000000] => 8c020004
+#                25500 reg_file[ 2] =>          1 (Port 2)
+#                25500 reading data: Mem[00000004] => 00000001
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/reset } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/jumpoffset_shifted } \
+{sim:/proj3_testbench/m1/jumpoffset } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 08000002
+#                24500 reg_file[ 0] =>          0 (Port 2)
+run
+#                25500 reading data: rom32[00000008] => 8c040014
+#                25500 reg_file[ 4] =>          5 (Port 2)
+#                25500 reading data: Mem[00000014] => 00000005
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 30220001
+#                24500 reg_file[ 2] =>          1 (Port 2)
+#                24500 reg_file[ 1] =>          x (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 00000820
+#                24500 reg_file[ 0] =>          0 (Port 2)
+run
+#                25500 reg_file[ 1] <=          0 (Write)
+#                25500 reading data: rom32[00000024] => 00001020
+run
+#                26500 reg_file[ 2] <=          0 (Write)
+#                26500 reading data: rom32[00000028] => 202200aa
+#                26500 reg_file[ 2] =>          0 (Port 2)
+#                26500 reg_file[ 1] =>          0 (Port 1)
+run
+#                27500 reading data: rom32[0000002c] => 08000002
+#                27500 reg_file[ 0] =>          0 (Port 2)
+#                27500 reg_file[ 0] =>          0 (Port 1)
+run
+#                28500 reading data: rom32[00000008] => 8c040014
+#                28500 reg_file[ 4] =>          5 (Port 2)
+#                28500 reading data: Mem[00000014] => 00000005
+# couldn't fork child process: resource temporarily unavailable
+# Compile of add32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu_ctl.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of control_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mem32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mips_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mux2.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg_file.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of rom32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Load canceled
+# couldn't fork child process: resource temporarily unavailable
+# Compile of add32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu_ctl.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of control_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mem32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mips_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mux2.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg_file.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of rom32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# couldn't fork child process: resource temporarily unavailable
+# Compile of add32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of alu_ctl.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of control_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mem32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mips_single.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of mux2.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of reg_file.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of rom32.v was successful.
+# couldn't fork child process: resource temporarily unavailable
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Load canceled
+# Break key hit 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Loading work.proj3_testbench
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.add32
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.rom32
+# Loading work.mem32
+# Loading work.mux2
+# Loading work.control_single
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 8c040014
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 4] =>          x (Port 2)
+#                 3500 reading data: Mem[00000014] => 00000005
+run
+#                 4500 reg_file[ 4] <=          5 (Write)
+#                 4500 reading data: rom32[0000000c] => 00002820
+#                 4500 reg_file[ 4] =>          5 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+run
+#                 5500 reg_file[ 5] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00a22820
+#                 5500 reg_file[ 2] =>          1 (Port 2)
+#                 5500 reg_file[ 5] =>          0 (Port 1)
+run
+#                 6500 reg_file[ 5] <=          1 (Write)
+#                 6500 reading data: rom32[00000014] => 0085302a
+#                 6500 reg_file[ 5] =>          1 (Port 1)
+#                 6500 reg_file[ 5] =>          1 (Port 2)
+#                 6500 reg_file[ 4] =>          5 (Port 1)
+run
+#                 7500 reg_file[ 6] <=          0 (Write)
+#                 7500 reading data: rom32[00000018] => 10c0fffd
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 6] =>          0 (Port 1)
+run
+#                 8500 reading data: rom32[00000010] => 00a22820
+#                 8500 reg_file[ 2] =>          1 (Port 2)
+#                 8500 reg_file[ 5] =>          1 (Port 1)
+run
+#                 9500 reg_file[ 5] <=          2 (Write)
+#                 9500 reading data: rom32[00000014] => 0085302a
+#                 9500 reg_file[ 5] =>          2 (Port 1)
+#                 9500 reg_file[ 5] =>          2 (Port 2)
+#                 9500 reg_file[ 4] =>          5 (Port 1)
+run
+#                10500 reg_file[ 6] <=          0 (Write)
+#                10500 reading data: rom32[00000018] => 10c0fffd
+#                10500 reg_file[ 0] =>          0 (Port 2)
+#                10500 reg_file[ 6] =>          0 (Port 1)
+run
+#                11500 reading data: rom32[00000010] => 00a22820
+#                11500 reg_file[ 2] =>          1 (Port 2)
+#                11500 reg_file[ 5] =>          2 (Port 1)
+run
+#                12500 reg_file[ 5] <=          3 (Write)
+#                12500 reading data: rom32[00000014] => 0085302a
+#                12500 reg_file[ 5] =>          3 (Port 1)
+#                12500 reg_file[ 5] =>          3 (Port 2)
+#                12500 reg_file[ 4] =>          5 (Port 1)
+run
+#                13500 reg_file[ 6] <=          0 (Write)
+#                13500 reading data: rom32[00000018] => 10c0fffd
+#                13500 reg_file[ 0] =>          0 (Port 2)
+#                13500 reg_file[ 6] =>          0 (Port 1)
+run
+#                14500 reading data: rom32[00000010] => 00a22820
+#                14500 reg_file[ 2] =>          1 (Port 2)
+#                14500 reg_file[ 5] =>          3 (Port 1)
+run
+#                15500 reg_file[ 5] <=          4 (Write)
+#                15500 reading data: rom32[00000014] => 0085302a
+#                15500 reg_file[ 5] =>          4 (Port 1)
+#                15500 reg_file[ 5] =>          4 (Port 2)
+#                15500 reg_file[ 4] =>          5 (Port 1)
+run
+#                16500 reg_file[ 6] <=          0 (Write)
+#                16500 reading data: rom32[00000018] => 10c0fffd
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 6] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000010] => 00a22820
+#                17500 reg_file[ 2] =>          1 (Port 2)
+#                17500 reg_file[ 5] =>          4 (Port 1)
+run
+#                18500 reg_file[ 5] <=          5 (Write)
+#                18500 reading data: rom32[00000014] => 0085302a
+#                18500 reg_file[ 5] =>          5 (Port 1)
+#                18500 reg_file[ 5] =>          5 (Port 2)
+#                18500 reg_file[ 4] =>          5 (Port 1)
+run
+#                19500 reg_file[ 6] <=          0 (Write)
+#                19500 reading data: rom32[00000018] => 10c0fffd
+#                19500 reg_file[ 0] =>          0 (Port 2)
+#                19500 reg_file[ 6] =>          0 (Port 1)
+run
+#                20500 reading data: rom32[00000010] => 00a22820
+#                20500 reg_file[ 2] =>          1 (Port 2)
+#                20500 reg_file[ 5] =>          5 (Port 1)
+run
+#                21500 reg_file[ 5] <=          6 (Write)
+#                21500 reading data: rom32[00000014] => 0085302a
+#                21500 reg_file[ 5] =>          6 (Port 1)
+#                21500 reg_file[ 5] =>          6 (Port 2)
+#                21500 reg_file[ 4] =>          5 (Port 1)
+run
+#                22500 reg_file[ 6] <=          1 (Write)
+#                22500 reading data: rom32[00000018] => 10c0fffd
+#                22500 reg_file[ 0] =>          0 (Port 2)
+#                22500 reg_file[ 6] =>          1 (Port 1)
+run
+#                23500 reading data: rom32[0000001c] => ac050000
+#                23500 reg_file[ 5] =>          6 (Port 2)
+#                23500 reg_file[ 0] =>          0 (Port 1)
+run
+#                24500 writing data: Mem[00000000] <= 00000006
+#                24500 reading data: rom32[00000020] => 00000820
+#                24500 reg_file[ 0] =>          0 (Port 2)
+run
+#                25500 reg_file[ 1] <=          0 (Write)
+#                25500 reading data: rom32[00000024] => 00001020
+run
+#                26500 reg_file[ 2] <=          0 (Write)
+#                26500 reading data: rom32[00000028] => 202200aa
+#                26500 reg_file[ 2] =>          0 (Port 2)
+#                26500 reg_file[ 1] =>          0 (Port 1)
+run
+#                27500 reading data: rom32[0000002c] => 08000002
+#                27500 reg_file[ 0] =>          0 (Port 2)
+#                27500 reg_file[ 0] =>          0 (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 00000820
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 2500 reg_file[ 1] <=          0 (Write)
+#                 2500 reading data: rom32[00000004] => 00001020
+run
+#                 3500 reg_file[ 2] <=          0 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 2] =>          0 (Port 2)
+#                 3500 reg_file[ 1] =>          0 (Port 1)
+run
+#                 4500 reg_file[ 2] <=        170 (Write)
+#                 4500 reading data: rom32[0000000c] => xxxxxxxx
+#                 4500 reg_file[ 2] =>        170 (Port 2)
+#                 4500 reg_file[ x] =>          x (Port 2)
+#                 4500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/alu_out } 
+run -continue
+run -continue
+run -continue
+run -continue
+run
+#                 5500 reading data: rom32[00000010] => xxxxxxxx
+run
+#                 6500 reading data: rom32[00000014] => xxxxxxxx
+run
+#                 7500 reading data: rom32[00000018] => xxxxxxxx
+run
+#                 8500 reading data: rom32[0000001c] => xxxxxxxx
+run
+#                 9500 reading data: rom32[00000020] => xxxxxxxx
+run
+#                10500 reading data: rom32[00000024] => xxxxxxxx
+# Load canceled
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/alu_out } 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/rfile_rd1 } \
+{sim:/proj3_testbench/m1/rfile_rd2 } \
+{sim:/proj3_testbench/m1/alu_out } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 00000820
+#                 1500 reg_file[ 0] =>          0 (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 2500 reg_file[ 1] <=          0 (Write)
+#                 2500 reading data: rom32[00000004] => 00001020
+run
+#                 3500 reg_file[ 2] <=          0 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 2] =>          0 (Port 2)
+#                 3500 reg_file[ 1] =>          0 (Port 1)
+run
+#                 4500 reg_file[ 2] <=        170 (Write)
+#                 4500 reading data: rom32[0000000c] => 08000000
+#                 4500 reg_file[ 2] =>        170 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 5500 reading data: rom32[00000000] => 00000820
+run
+#                 6500 reg_file[ 1] <=          0 (Write)
+#                 6500 reading data: rom32[00000004] => 00001020
+run
+#                 7500 reg_file[ 2] <=          0 (Write)
+#                 7500 reading data: rom32[00000008] => 202200aa
+#                 7500 reg_file[ 2] =>          0 (Port 2)
+#                 7500 reg_file[ 1] =>          0 (Port 1)
+run
+#                 8500 reg_file[ 2] <=        170 (Write)
+#                 8500 reading data: rom32[0000000c] => 08000000
+#                 8500 reg_file[ 2] =>        170 (Port 2)
+#                 8500 reg_file[ 0] =>          0 (Port 2)
+#                 8500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 9500 reading data: rom32[00000000] => 00000820
+run
+#                10500 reg_file[ 1] <=          0 (Write)
+#                10500 reading data: rom32[00000004] => 00001020
+run
+#                11500 reg_file[ 2] <=          0 (Write)
+#                11500 reading data: rom32[00000008] => 202200aa
+#                11500 reg_file[ 2] =>          0 (Port 2)
+#                11500 reg_file[ 1] =>          0 (Port 1)
+run
+#                12500 reg_file[ 2] <=        170 (Write)
+#                12500 reading data: rom32[0000000c] => 08000000
+#                12500 reg_file[ 2] =>        170 (Port 2)
+#                12500 reg_file[ 0] =>          0 (Port 2)
+#                12500 reg_file[ 0] =>          0 (Port 1)
+run
+#                13500 reading data: rom32[00000000] => 00000820
+run
+#                14500 reg_file[ 1] <=          0 (Write)
+#                14500 reading data: rom32[00000004] => 00001020
+run
+#                15500 reg_file[ 2] <=          0 (Write)
+#                15500 reading data: rom32[00000008] => 202200aa
+#                15500 reg_file[ 2] =>          0 (Port 2)
+#                15500 reg_file[ 1] =>          0 (Port 1)
+run
+#                16500 reg_file[ 2] <=        170 (Write)
+#                16500 reading data: rom32[0000000c] => 08000000
+#                16500 reg_file[ 2] =>        170 (Port 2)
+#                16500 reg_file[ 0] =>          0 (Port 2)
+#                16500 reg_file[ 0] =>          0 (Port 1)
+run
+#                17500 reading data: rom32[00000000] => 00000820
+run
+#                18500 reg_file[ 1] <=          0 (Write)
+#                18500 reading data: rom32[00000004] => 00001020
+run
+#                19500 reg_file[ 2] <=          0 (Write)
+#                19500 reading data: rom32[00000008] => 202200aa
+#                19500 reg_file[ 2] =>          0 (Port 2)
+#                19500 reg_file[ 1] =>          0 (Port 1)
+run
+#                20500 reg_file[ 2] <=        170 (Write)
+#                20500 reading data: rom32[0000000c] => 08000000
+#                20500 reg_file[ 2] =>        170 (Port 2)
+#                20500 reg_file[ 0] =>          0 (Port 2)
+#                20500 reg_file[ 0] =>          0 (Port 1)
+run
+#                21500 reading data: rom32[00000000] => 00000820
+run
+#                22500 reg_file[ 1] <=          0 (Write)
+#                22500 reading data: rom32[00000004] => 00001020
+run
+#                23500 reg_file[ 2] <=          0 (Write)
+#                23500 reading data: rom32[00000008] => 202200aa
+#                23500 reg_file[ 2] =>          0 (Port 2)
+#                23500 reg_file[ 1] =>          0 (Port 1)
+run
+#                24500 reg_file[ 2] <=        170 (Write)
+#                24500 reading data: rom32[0000000c] => 08000000
+#                24500 reg_file[ 2] =>        170 (Port 2)
+#                24500 reg_file[ 0] =>          0 (Port 2)
+#                24500 reg_file[ 0] =>          0 (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v failed with 1 errors.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 1 failed with 1 error. 
+# Load canceled
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v(89): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'y'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v(19).
+#         Region: /proj3_testbench/m1/BRMUX
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/pc_incr } \
+{sim:/proj3_testbench/m1/Zero } \
+{sim:/proj3_testbench/m1/Branch_Sel } 
+add wave \
+{sim:/proj3_testbench/m1/RFILE/file_array[3] } \
+{sim:/proj3_testbench/m1/RFILE/file_array[2] } \
+{sim:/proj3_testbench/m1/RFILE/file_array[1] } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 2] =>          1 (Port 2)
+#                 3500 reg_file[ 1] =>          x (Port 1)
+run
+#                 4500 reg_file[ 2] <=          x (Write)
+#                 4500 reading data: rom32[0000000c] => 00000820
+#                 4500 reg_file[ 2] =>          x (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v(89): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'y'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v(19).
+#         Region: /proj3_testbench/m1/BRMUX
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/Zero } \
+{sim:/proj3_testbench/m1/Branch_Sel } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 2] =>          1 (Port 2)
+#                 3500 reg_file[ 1] =>          x (Port 1)
+run
+#                 4500 reg_file[ 2] <=          x (Write)
+#                 4500 reading data: rom32[0000000c] => 00000820
+#                 4500 reg_file[ 2] =>          x (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 5500 reg_file[ 1] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000014] => 1443fffd
+#                 6500 reg_file[ 3] =>          2 (Port 2)
+#                 6500 reg_file[ 2] =>          0 (Port 1)
+run
+#                 7500 reading data: rom32[00000018] => xxxxxxxx
+#                 7500 reg_file[ x] =>          x (Port 2)
+#                 7500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                 8500 reading data: rom32[0000001c] => xxxxxxxx
+add wave \
+{sim:/proj3_testbench/m1/PCSrc2 } 
+run
+#                 9500 reading data: rom32[00000020] => xxxxxxxx
+run
+#                10500 reading data: rom32[00000024] => xxxxxxxx
+run
+#                11500 reading data: rom32[00000028] => xxxxxxxx
+run
+#                12500 reading data: rom32[0000002c] => xxxxxxxx
+run
+#                13500 reading data: rom32[00000030] => xxxxxxxx
+run
+#                14500 reading data: rom32[00000034] => xxxxxxxx
+run
+#                15500 reading data: rom32[00000038] => xxxxxxxx
+run
+#                16500 reading data: rom32[0000003c] => xxxxxxxx
+restart
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v(89): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'y'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v(19).
+#         Region: /proj3_testbench/m1/BRMUX
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 2] =>          1 (Port 2)
+#                 3500 reg_file[ 1] =>          x (Port 1)
+run
+#                 4500 reg_file[ 2] <=          x (Write)
+#                 4500 reading data: rom32[0000000c] => 00000820
+#                 4500 reg_file[ 2] =>          x (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 5500 reg_file[ 1] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000014] => 1443fffd
+#                 6500 reg_file[ 3] =>          2 (Port 2)
+#                 6500 reg_file[ 2] =>          0 (Port 1)
+run
+#                 7500 reading data: rom32[00000018] => xxxxxxxx
+#                 7500 reg_file[ x] =>          x (Port 2)
+#                 7500 reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                 8500 reading data: rom32[0000001c] => xxxxxxxx
+run
+#                 9500 reading data: rom32[00000020] => xxxxxxxx
+run
+#                10500 reading data: rom32[00000024] => xxxxxxxx
+add wave \
+{sim:/proj3_testbench/m1/Jump } 
+restart
+# ** Warning: (vsim-3015) /nfs/farm/u2/r/rasmusto/ece472/lab3/mips_single.v(89): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'y'. The port definition is at: /nfs/farm/u2/r/rasmusto/ece472/lab3/mux2.v(19).
+#         Region: /proj3_testbench/m1/BRMUX
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 2] =>          1 (Port 2)
+#                 3500 reg_file[ 1] =>          x (Port 1)
+run
+#                 4500 reg_file[ 2] <=          x (Write)
+#                 4500 reading data: rom32[0000000c] => 00000820
+#                 4500 reg_file[ 2] =>          x (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 5500 reg_file[ 1] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000014] => 1443fffd
+#                 6500 reg_file[ 3] =>          2 (Port 2)
+#                 6500 reg_file[ 2] =>          0 (Port 1)
+# Compile of add32.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_ctl.v was successful.
+# Compile of control_single.v was successful.
+# Compile of mem32.v was successful.
+# Compile of mips_single.v was successful.
+# Compile of mux2.v was successful.
+# Compile of reg32.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of rom32.v was successful.
+# Compile of testbench.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.proj3_testbench
+# vsim -novopt work.proj3_testbench 
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.proj3_testbench
+# Loading work.proj3_testbench
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mips_single
+# Loading work.mips_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg32
+# Loading work.reg32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.add32
+# Loading work.add32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.reg_file
+# Loading work.reg_file
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu
+# Loading work.alu
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.rom32
+# Loading work.rom32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mem32
+# Loading work.mem32
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.mux2
+# Loading work.mux2
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.control_single
+# Loading work.control_single
+# Refreshing /nfs/farm/u2/r/rasmusto/ece472/lab3/work.alu_ctl
+# Loading work.alu_ctl
+add wave \
+{sim:/proj3_testbench/m1/clk } \
+{sim:/proj3_testbench/m1/instr } \
+{sim:/proj3_testbench/m1/opcode } \
+{sim:/proj3_testbench/m1/pc_next } \
+{sim:/proj3_testbench/m1/pc } \
+{sim:/proj3_testbench/m1/Branch } \
+{sim:/proj3_testbench/m1/PCSrc } \
+{sim:/proj3_testbench/m1/PCSrc2 } \
+{sim:/proj3_testbench/m1/PCSrc_out } \
+{sim:/proj3_testbench/m1/Zero } \
+{sim:/proj3_testbench/m1/Branch_Sel } 
+run
+run
+#                 1500 reading data: rom32[00000000] => 8c020004
+#                 1500 reg_file[ 2] =>          x (Port 2)
+#                 1500 reg_file[ 0] =>          0 (Port 1)
+#                 1500 reading data: Mem[00000004] => 00000001
+run
+#                 2500 reg_file[ 2] <=          1 (Write)
+#                 2500 reading data: rom32[00000004] => 8c030008
+#                 2500 reg_file[ 2] =>          1 (Port 2)
+#                 2500 reg_file[ 3] =>          x (Port 2)
+#                 2500 reading data: Mem[00000008] => 00000002
+run
+#                 3500 reg_file[ 3] <=          2 (Write)
+#                 3500 reading data: rom32[00000008] => 202200aa
+#                 3500 reg_file[ 3] =>          2 (Port 2)
+#                 3500 reg_file[ 2] =>          1 (Port 2)
+#                 3500 reg_file[ 1] =>          x (Port 1)
+run
+#                 4500 reg_file[ 2] <=          x (Write)
+#                 4500 reading data: rom32[0000000c] => 00000820
+#                 4500 reg_file[ 2] =>          x (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 2)
+#                 4500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 5500 reg_file[ 1] <=          0 (Write)
+#                 5500 reading data: rom32[00000010] => 00001020
+run
+#                 6500 reg_file[ 2] <=          0 (Write)
+#                 6500 reading data: rom32[00000014] => 1443fffd
+#                 6500 reg_file[ 3] =>          2 (Port 2)
+#                 6500 reg_file[ 2] =>          0 (Port 1)
+run
+#                 7500 reading data: rom32[0000000c] => 00000820
+#                 7500 reg_file[ 0] =>          0 (Port 2)
+#                 7500 reg_file[ 0] =>          0 (Port 1)
+run
+#                 8500 reg_file[ 1] <=          0 (Write)
+#                 8500 reading data: rom32[00000010] => 00001020
+run
+#                 9500 reg_file[ 2] <=          0 (Write)
+#                 9500 reading data: rom32[00000014] => 1443fffd
+#                 9500 reg_file[ 3] =>          2 (Port 2)
+#                 9500 reg_file[ 2] =>          0 (Port 1)
