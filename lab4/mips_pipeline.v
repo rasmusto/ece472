@@ -1,23 +1,3 @@
-//-----------------------------------------------------------------------------
-// Title         : MIPS Pipelined Processor
-// Project       : ECE 313 - Computer Organization
-//-----------------------------------------------------------------------------
-// File          : mips_single.v
-// Author        : John Nestor  <nestorj@lafayette.edu>
-// Organization  : Lafayette College
-// 
-// Created       : October 2002
-// Last modified : 7 January 2005
-//-----------------------------------------------------------------------------
-// Description :
-//   Pipelined implementation of the MIPS processor subset described in
-//   Section 6.3 of "Computer Organization and Design, 3rd ed."
-//   by David Patterson & John Hennessey, Morgan Kaufmann, 2004 (COD3e).  
-//
-//   It implements the equivalent of Figure 6.27 on page 404 of COD3e
-//
-//-----------------------------------------------------------------------------
-
 module mips_pipeline(clk, reset);
 input clk, reset;
 
@@ -63,6 +43,7 @@ input clk, reset;
          EX_MemRead, EX_MemWrite, EX_ALUSrc;
          
     reg  Stall = 0;
+    reg  [31:0] add_increment = 32'd4;
 
     wire EX_Zero;
 
@@ -101,7 +82,7 @@ input clk, reset;
 
     reg32		 IF_PC(clk, reset, IF_pc_next, IF_pc);
 
-    add32 		IF_PCADD(IF_pc, 32'd4, IF_pc4);
+    add32 		IF_PCADD(IF_pc, add_increment, IF_pc4);
 
     mux2 #(32)	IF_PCMUX(MEM_PCSrc, IF_pc4, MEM_btgt, ID_jump_in);
 
@@ -113,7 +94,7 @@ input clk, reset;
 
     assign ID_jump_offset_shifted = ID_jump_offset << 2;
 
-    mux2 #(32) JMPMUX(ID_Jump, stall_mux_out, ID_jump_offset_shifted, IF_pc_next);
+    mux2 #(32) JMPMUX(ID_Jump, ID_jump_in, ID_jump_offset_shifted, IF_pc_next);
 
     // ********************************************************************
     //                           END Lab 4 Code
@@ -126,6 +107,11 @@ input clk, reset;
         begin
             ID_instr <= 0;
             ID_pc4   <= 0;
+        end
+        else if(Stall)
+        begin      
+          ID_instr <= ID_instr;
+          ID_pc4   <= ID_pc4;
         end
         else begin
             ID_instr <= IF_instr;
@@ -149,8 +135,6 @@ input clk, reset;
                        .Jump(ID_Jump), .ALUOp(ID_ALUOp));
 
 
-    mux2 #(32) stall_mux(Stall, ID_jump_in, IF_pc, stall_mux_out);
-
     always @(posedge clk)		    // ID/EX Pipeline Register
     begin
         if (reset)
@@ -171,6 +155,14 @@ input clk, reset;
             EX_rt       <= 0;
             EX_rd       <= 0;
             EX_rs       <= 0;
+        end
+        else if (Stall)
+        begin
+          
+            EX_rd       <= EX_rd;
+            EX_rs       <= EX_rs;
+            EX_rt       <= EX_rt;
+            EX_RegWrite <= ID_RegWrite;
         end
         else begin
             EX_RegDst   <= ID_RegDst;
@@ -196,7 +188,6 @@ input clk, reset;
     //                              EX Stage
     // ********************************************************************
 
-    // branch offset shifter
     assign EX_offset = EX_extend << 2;
 
     assign EX_funct = EX_extend[5:0];  
@@ -294,10 +285,12 @@ input clk, reset;
         ForwardB = 2'b10;
     
       //MEM Hazard    
-      if(WB_RegWrite && (WB_RegRd != 0) && !(MEM_RegWrite && (MEM_RegRd !=0) && (MEM_RegRd != EX_rs) && (WB_RegRd == EX_rs)))
+      if(WB_RegWrite && (WB_RegRd != 0) && !(MEM_RegWrite && (MEM_RegRd !=0) 
+      && (MEM_RegRd != EX_rs) && (WB_RegRd == EX_rs)))
         ForwardA = 2'b01;
       
-      if(WB_RegWrite && (WB_RegRd != 0) && !(MEM_RegWrite && (MEM_RegRd !=0) && (MEM_RegRd != EX_rt) && (WB_RegRd == EX_rt)))
+      if(WB_RegWrite && (WB_RegRd != 0) && !(MEM_RegWrite && (MEM_RegRd !=0) 
+      && (MEM_RegRd != EX_rt) && (WB_RegRd == EX_rt)))
         ForwardB = 2'b01;
     end   
     
@@ -308,23 +301,20 @@ input clk, reset;
     begin
     if((EX_MemRead == 1'b1) && ((EX_rt == ID_rs) || (EX_rt == ID_rt)))
           begin
-            $display("Entered stall unit");
-            //stall
-            //zero control signals            
-            Stall       <= 1;
-            EX_RegDst   <= 0;
+            Stall       <= 1;        
             EX_ALUOp    <= 0;
             EX_ALUSrc   <= 0;
             EX_Branch   <= 0;
             EX_MemRead  <= 0;
             EX_MemWrite <= 0;
             EX_RegWrite <= 0;
-            EX_MemtoReg <= 0;           
+            EX_MemtoReg <= 0;    
+            add_increment = 32'd0;       
           end
         else
           begin
-            Stall       <= 0;
+            Stall        <= 0;
+            add_increment = 32'd4;
           end   
       end
-      
 endmodule

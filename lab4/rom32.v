@@ -27,16 +27,27 @@ module rom32(address, data_out);
       case (mem_offset) 
         
           // ADD test:                              
-        
+          /*
           5'd0 : data_out = { 6'd0,  5'd0, 5'd0, 5'd2, 5'd0, 6'd32 };//add $2, $0, $0;
           5'd1 : data_out = { 6'd0,  5'd2, 5'd2, 5'd3, 5'd0, 6'd32 };//add $3, $2, $2;    
           5'd2 : data_out = { 6'd0,  5'd3, 5'd3, 5'd4, 5'd0, 6'd32 };//add $4, $3, $3;
-                 
-          /*
-          // LW/ADD test:          
+          */         
+          
+         
           5'd0 : data_out = { 6'd35, 5'd0, 5'd1, 16'd4 };              // lw $1, 4($0)    r1=1
-          5'd1 : data_out = { 6'd0,  5'd0, 5'd1, 5'd2, 5'd0, 6'd32 };  // add $2, $0, $1  r2=0+r1            
-          */
+          5'd1 : data_out = { 6'd35, 5'd0, 5'd2, 16'd4 };              // lw $2, 4($0)    r2=1
+          5'd2 : data_out = { 6'd0,  5'd1, 5'd2, 5'd3, 5'd0, 6'd32 };  // add $3, $1, $2  r3=r1+r2            
+          5'd3 : data_out = { 6'd0,  5'd3, 5'd3, 5'd4, 5'd0, 6'd32 };  // add $4, $3, $3  r3=r1+r2   
+          5'd4 : data_out = { 6'd2,  26'd0 };                          // j 0; restart  loop
+          5'd5 : data_out = { 32'd0 };                                 // nop         
+          
+          
+         // 5'd3 : data_out = { 6'd0,  5'd0, 5'd0, 5'd4, 5'd0, 6'd32 };  //add $2, $0, $0;
+         // 5'd4 : data_out = { 6'd0,  5'd0, 5'd0, 5'd5, 5'd0, 6'd32 };  //add $2, $0, $0;
+         // 5'd5 : data_out = { 6'd0,  5'd0, 5'd0, 5'd6, 5'd0, 6'd32 };  //add $2, $0, $0;
+         // 5'd6 : data_out = { 6'd0,  5'd0, 5'd0, 5'd7, 5'd0, 6'd32 };  //add $2, $0, $0;
+         // 5'd7 : data_out = { 6'd0,  5'd0, 5'd0, 5'd8, 5'd0, 6'd32 };  //add $2, $0, $0;          
+          
                
           //5'd0 : data_out = { 6'd0,  5'd0, 5'd0, 5'd2, 5'd0, 6'd32 };  // add $2, $0, $0  r2=0+0
           //5'd0 : data_out = { 6'd35, 5'd0, 5'd2, 16'd4 };              // lw $2, 4($0)    r2=1
