@@ -1,0 +1,52 @@
+########synopsys synthesis script############ 
+
+#boilerplate
+set hdlin_auto_save_templates true
+set hdlin_check_no_latch      true
+set hdlin_warn_sens_list      true
+
+#######Read in Verilog files#####
+read_verilog "./core/ctl_fsm.v"
+read_verilog "./core/decode_pipe.v"
+read_verilog "./core/EXEC_stage.v"
+read_verilog "./core/forward.v"
+read_verilog "./core/mem_module.v"
+read_verilog "./core/mips789_defs.v"
+read_verilog "./core/RF_components.v"
+read_verilog "./core/RF_stage.v"
+read_verilog "./core/ulit.v"
+read_verilog "./core/mips_core.v"
+
+current_design mips_core
+
+link
+
+change_names -rules verilog -hierarchy
+
+##########Compile the design#################
+
+compile
+#compile -ungroup_all
+
+# Make sure we are at the top level
+set current_design mips_core
+
+################## Generate area and constraints reports on the design ##############
+#report_area    > ./reports/area.rpt
+
+######### Generate timing report for worst case path##############
+#report_timing  > reports/delay.rpt
+#report_timing
+#report_hierarchy  > reports/cells.rpt
+#report_hierarchy
+
+########### Generate power report ############
+report_power	> reports/power.rpt
+report_power
+
+# Save the gate level Verilog
+write -format verilog -hierarchy -output  vlogout/mips_core.gate.v
+#Save the timing constraints file
+write_sdc vlogout/mips_core.sdc
+
+#quit

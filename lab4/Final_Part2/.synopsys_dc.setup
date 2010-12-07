@@ -1,0 +1,12 @@
+# Set up library
+#process=1;temp=25;voltage=1.8  "TYPICAL"
+set target_library  /nfs/spectre/u8/vlsi/UMC180/tt_1v8_25c.db
+
+set link_library "* $target_library"
+
+# specify directory for intermediate files from analyze
+define_design_lib WORK -path ./work
+
+suppress_message {UID-401}
+set gui_auto_start 1
+
