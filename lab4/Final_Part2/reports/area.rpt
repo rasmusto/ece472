@@ -1,0 +1,26 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'mips_core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : area
+Design : mips_core
+Version: B-2008.09-SP4
+Date   : Tue Dec  7 14:13:45 2010
+****************************************
+
+Library(s) Used:
+
+    tt_1v8_25c (File: /nfs/spectre/u8/vlsi/UMC180/tt_1v8_25c.db)
+
+Number of ports:              267
+Number of nets:              6153
+Number of cells:             5806
+Number of references:          66
+
+Combinational area:       131881.780490
+Noncombinational area:    83632.349510
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          215514.130000
+Total area:                 undefined
+1

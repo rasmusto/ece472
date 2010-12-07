@@ -1,0 +1,10 @@
+## Version    : 4.2.0
+## File       : /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/pnr/appTemplate.dat/appD.dpt
+## Created at : Tue Dec 07 14:17:58 PST 2010
+## Created by : Power Plan Template Editor
+
+## appR
+region appR -cellTemplate appD_appR -stripe :layers M5 M4 M6 :extendTo design_boundary
+
+## End of File : /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/pnr/appTemplate.dat/appD.dpt
+## Closed at   : Tue Dec 07 14:17:58 PST 2010

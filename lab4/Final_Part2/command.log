@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version B-2008.09-SP4 for linux -- Feb 27, 2009
-#@ # Date:   Tue Dec  7 12:16:39 2010
-#@ # Run by: rasmusto@kec1130-33.engr.oregonstate.edu
+#@ # Date:   Tue Dec  7 14:12:49 2010
+#@ # Run by: rasmusto@flip.engr.oregonstate.edu
 #@ 
 
 source /usr/local/apps/synopsys/current_synthesis/admin/setup/.synopsys_dc.setup
@@ -3523,20 +3523,20 @@ source -echo -verbose /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/bin/dc_syn
 #@ 
 #@ ##########Compile the design#################
 #@ 
-#@ compile
-#@ #compile -ungroup_all
+#@ #compile
+#@ compile -ungroup_all
 #@ 
 #@ # Make sure we are at the top level
 #@ set current_design mips_core
 #@ 
 #@ ################## Generate area and constraints reports on the design ##############
-#@ #report_area    > ./reports/area.rpt
+#@ report_area    > ./reports/area.rpt
 #@ 
 #@ ######### Generate timing report for worst case path##############
-#@ #report_timing  > reports/delay.rpt
-#@ #report_timing
-#@ #report_hierarchy  > reports/cells.rpt
-#@ #report_hierarchy
+#@ report_timing  > reports/delay.rpt
+#@ report_timing
+#@ report_hierarchy  > reports/cells.rpt
+#@ report_hierarchy
 #@ 
 #@ ########### Generate power report ############
 #@ report_power	> reports/power.rpt
@@ -3551,46 +3551,4 @@ source -echo -verbose /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/bin/dc_syn
 #@ # -- End source /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/bin/dc_syn2
 
 gui_start
-change_selection [get_s MEM_CTL]
-change_selection [get_s alu_pass0]
-change_selection [get_s MEM_CTL]
-change_selection [get_s mips_core]
-change_selection [get_s clk]
-change_selection [get_s decoder_pipe]
-change_selection [get_s {{ins_i[31:0]} {ins_i[31]} {ins_i[30]} {ins_i[29]} {ins_i[28]} {ins_i[27]} {ins_i[26]} {ins_i[25]} {ins_i[24]} {ins_i[23]}}]
-change_selection -add [get_s {{ins_i[22]} {ins_i[21]} {ins_i[20]} {ins_i[19]} {ins_i[18]} {ins_i[17]} {ins_i[16]} {ins_i[15]} {ins_i[14]} {ins_i[13]}}]
-change_selection -add [get_s {{ins_i[12]} {ins_i[11]} {ins_i[10]} {ins_i[9]} {ins_i[8]} {ins_i[7]} {ins_i[6]} {ins_i[5]} {ins_i[4]} {ins_i[3]} {ins_i[2]}}]
-change_selection -add [get_s {{ins_i[1]} {ins_i[0]}}]
-change_selection [get_s {{cop_dout[31:0]} {cop_dout[31]} {cop_dout[30]} {cop_dout[29]} {cop_dout[28]} {cop_dout[27]} {cop_dout[26]} {cop_dout[25]}}]
-change_selection -add [get_s {{cop_dout[24]} {cop_dout[23]} {cop_dout[22]} {cop_dout[21]} {cop_dout[20]} {cop_dout[19]} {cop_dout[18]} {cop_dout[17]}}]
-change_selection -add [get_s {{cop_dout[16]} {cop_dout[15]} {cop_dout[14]} {cop_dout[13]} {cop_dout[12]} {cop_dout[11]} {cop_dout[10]} {cop_dout[9]}}]
-change_selection -add [get_s {{cop_dout[8]} {cop_dout[7]} {cop_dout[6]} {cop_dout[5]} {cop_dout[4]} {cop_dout[3]} {cop_dout[2]} {cop_dout[1]} {cop_dout[0]}}]
-change_selection [get_s {decoder_pipe/clk decoder_pipe/id2ra_ctl_clr decoder_pipe/id2ra_ctl_cls decoder_pipe/ra2ex_ctl_clr {decoder_pipe/ins_i[31:0]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[31]} {decoder_pipe/ins_i[30]} {decoder_pipe/ins_i[29]} {decoder_pipe/ins_i[28]} {decoder_pipe/ins_i[27]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[26]} {decoder_pipe/ins_i[25]} {decoder_pipe/ins_i[24]} {decoder_pipe/ins_i[23]} {decoder_pipe/ins_i[22]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[21]} {decoder_pipe/ins_i[20]} {decoder_pipe/ins_i[19]} {decoder_pipe/ins_i[18]} {decoder_pipe/ins_i[17]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[16]} {decoder_pipe/ins_i[15]} {decoder_pipe/ins_i[14]} {decoder_pipe/ins_i[13]} {decoder_pipe/ins_i[12]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[11]} {decoder_pipe/ins_i[10]} {decoder_pipe/ins_i[9]} {decoder_pipe/ins_i[8]} {decoder_pipe/ins_i[7]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[6]} {decoder_pipe/ins_i[5]} {decoder_pipe/ins_i[4]} {decoder_pipe/ins_i[3]} {decoder_pipe/ins_i[2]}}]
-change_selection -add [get_s {{decoder_pipe/ins_i[1]} {decoder_pipe/ins_i[0]} rnd_pass2 decoder_pipe NET1606 clk NET1572 NET1640 {ins_i[31:0]}}]
-change_selection -add [get_s {{ins_i[31]} {ins_i[30]} {ins_i[29]} {ins_i[28]} {ins_i[27]} {ins_i[26]} {ins_i[25]} {ins_i[24]} {ins_i[23]} {ins_i[22]}}]
-change_selection -add [get_s {{ins_i[21]} {ins_i[20]} {ins_i[19]} {ins_i[18]} {ins_i[17]} {ins_i[16]} {ins_i[15]} {ins_i[14]} {ins_i[13]} {ins_i[12]}}]
-change_selection -add [get_s {{ins_i[11]} {ins_i[10]} {ins_i[9]} {ins_i[8]} {ins_i[7]} {ins_i[6]} {ins_i[5]} {ins_i[4]} {ins_i[3]} {ins_i[2]} {ins_i[1]}}]
-change_selection -add [get_s {{ins_i[0]}}]
-change_selection [get_s decoder_pipe]
-change_selection 
-compile -exact_map -map_effort high -area_effort high
-change_selection [get_s mips_core]
-::cmenus::create_schematic
-uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group }
-uplevel #0 { report_design }
-dft_drc
-uplevel #0 check_timing
-uplevel #0 { report_power -analysis_effort low }
-uplevel #0 { report_area -nosplit }
-uplevel #0 { report_clock -nosplit }
-uplevel #0 { report_net }
-uplevel #0 { report_design }
-uplevel #0 check_design
-uplevel #0 { report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 2 -sort_by group }
 quit

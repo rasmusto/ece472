@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : hierarchy
+Design : mips_core
+Version: B-2008.09-SP4
+Date   : Tue Dec  7 14:13:45 2010
+****************************************
+
+mips_core
+    ADDFX2            tt_1v8_25c
+    ADDFXL            tt_1v8_25c
+    ADDHXL            tt_1v8_25c
+    AND2X1            tt_1v8_25c
+    AND3X2            tt_1v8_25c
+    AOI2BB1X1         tt_1v8_25c
+    AOI2BB2X1         tt_1v8_25c
+    AOI21X1           tt_1v8_25c
+    AOI22X1           tt_1v8_25c
+    AOI22XL           tt_1v8_25c
+    AOI31X1           tt_1v8_25c
+    AOI32X1           tt_1v8_25c
+    AOI211X1          tt_1v8_25c
+    AOI221XL          tt_1v8_25c
+    AOI222XL          tt_1v8_25c
+    CLKINVX1          tt_1v8_25c
+    CLKINVXL          tt_1v8_25c
+    DFFHQX1           tt_1v8_25c
+    DFFTRX1           tt_1v8_25c
+    DFFX1             tt_1v8_25c
+    EDFFTRX1          tt_1v8_25c
+    EDFFX1            tt_1v8_25c
+    EDFFX2            tt_1v8_25c
+    EDFFX4            tt_1v8_25c
+    INVX2             tt_1v8_25c
+    MX2X1             tt_1v8_25c
+    MX2X2             tt_1v8_25c
+    MX4X1             tt_1v8_25c
+    MX4XL             tt_1v8_25c
+    MXI2X1            tt_1v8_25c
+    MXI2XL            tt_1v8_25c
+    NAND2BX1          tt_1v8_25c
+    NAND2X1           tt_1v8_25c
+    NAND2X2           tt_1v8_25c
+    NAND2XL           tt_1v8_25c
+    NAND3BX1          tt_1v8_25c
+    NAND3X1           tt_1v8_25c
+    NAND4BX1          tt_1v8_25c
+    NAND4X1           tt_1v8_25c
+    NOR2BX1           tt_1v8_25c
+    NOR2X1            tt_1v8_25c
+    NOR3BX1           tt_1v8_25c
+    NOR3X1            tt_1v8_25c
+    NOR4BX1           tt_1v8_25c
+    NOR4X1            tt_1v8_25c
+    OAI2BB1X1         tt_1v8_25c
+    OAI2BB1XL         tt_1v8_25c
+    OAI2BB2X1         tt_1v8_25c
+    OAI2BB2XL         tt_1v8_25c
+    OAI21X1           tt_1v8_25c
+    OAI22X1           tt_1v8_25c
+    OAI31X1           tt_1v8_25c
+    OAI31XL           tt_1v8_25c
+    OAI32X1           tt_1v8_25c
+    OAI211X1          tt_1v8_25c
+    OAI221X1          tt_1v8_25c
+    OAI222X1          tt_1v8_25c
+    OR2X1             tt_1v8_25c
+    OR2XL             tt_1v8_25c
+    OR3X1             tt_1v8_25c
+    OR3XL             tt_1v8_25c
+    OR4X1             tt_1v8_25c
+    OR4X2             tt_1v8_25c
+    XNOR2X1           tt_1v8_25c
+    XOR2X1            tt_1v8_25c
+    XOR3X2            tt_1v8_25c
+1

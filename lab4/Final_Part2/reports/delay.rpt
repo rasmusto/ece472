@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mips_core
+Version: B-2008.09-SP4
+Date   : Tue Dec  7 14:13:45 2010
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1v8_25c   Library: tt_1v8_25c
+Wire Load Model Mode: top
+
+  Startpoint: rnd_pass1/r5_o_reg_2_
+              (rising edge-triggered flip-flop)
+  Endpoint: wr_en_o[2] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  rnd_pass1/r5_o_reg_2_/CK (DFFHQX1)                      0.00 #     0.00 r
+  rnd_pass1/r5_o_reg_2_/Q (DFFHQX1)                       0.25       0.25 f
+  U3000/Y (OR3X1)                                         0.22       0.47 f
+  U2999/Y (OAI31X1)                                       0.11       0.57 r
+  U2998/Y (CLKINVX1)                                      0.12       0.69 f
+  U2716/Y (NAND4X1)                                       0.76       1.45 r
+  U2710/Y (NOR4BX1)                                       0.14       1.58 r
+  U2709/Y (NAND4X1)                                       0.72       2.30 f
+  U2639/Y (NOR3BX1)                                       1.17       3.48 r
+  U2638/Y (AOI22X1)                                       0.10       3.58 f
+  U2637/Y (OAI221X1)                                      0.41       3.99 r
+  U466/Y (XOR2X1)                                         0.25       4.25 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_0/CO (ADDFXL)      0.69       4.93 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_1/CO (ADDFXL)      0.25       5.18 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_2/CO (ADDFXL)      0.25       5.42 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_3/CO (ADDFXL)      0.25       5.67 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_4/CO (ADDFXL)      0.25       5.92 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_5/CO (ADDFX2)      0.20       6.12 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_6/CO (ADDFX2)      0.19       6.31 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_7/CO (ADDFX2)      0.19       6.50 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_8/CO (ADDFX2)      0.19       6.68 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_9/CO (ADDFX2)      0.19       6.87 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_10/CO (ADDFX2)     0.19       7.06 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_11/CO (ADDFX2)     0.19       7.25 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_12/CO (ADDFX2)     0.19       7.44 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_13/CO (ADDFX2)     0.19       7.63 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_14/CO (ADDFX2)     0.19       7.82 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_15/CO (ADDFX2)     0.19       8.01 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_16/CO (ADDFX2)     0.19       8.20 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_17/CO (ADDFX2)     0.19       8.39 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_18/CO (ADDFX2)     0.19       8.58 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_19/CO (ADDFX2)     0.19       8.77 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_20/CO (ADDFX2)     0.19       8.96 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_21/CO (ADDFX2)     0.19       9.15 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_22/CO (ADDFX2)     0.19       9.34 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_23/CO (ADDFX2)     0.19       9.53 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_24/CO (ADDFX2)     0.19       9.72 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_25/CO (ADDFX2)     0.19       9.90 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_26/CO (ADDFX2)     0.19      10.09 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_27/CO (ADDFX2)     0.19      10.28 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_28/CO (ADDFX2)     0.19      10.47 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_29/CO (ADDFX2)     0.19      10.66 f
+  iexec_stage/MIPS_alu/mips_alu/r92/U1_30/S (ADDFX2)      0.21      10.88 r
+  U88/Y (OAI2BB2XL)                                       0.13      11.01 r
+  iexec_stage/MIPS_alu/mips_alu/r86/U1_30/CO (ADDFX2)     0.36      11.37 r
+  iexec_stage/MIPS_alu/mips_alu/r86/U1_31/CO (ADDFX2)     0.18      11.55 r
+  iexec_stage/MIPS_alu/mips_alu/r86/U1_32/Y (XOR3X2)      0.15      11.70 r
+  U2606/Y (AOI221XL)                                      0.07      11.77 f
+  U2285/Y (NAND2X1)                                       0.20      11.97 r
+  U228/Y (MXI2X1)                                         0.15      12.12 f
+  U223/Y (OAI21X1)                                        0.08      12.20 r
+  wr_en_o[2] (out)                                        0.00      12.20 r
+  data arrival time                                                 12.20
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

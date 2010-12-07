@@ -1,0 +1,41 @@
+Loading db file '/nfs/spectre/u8/vlsi/UMC180/tt_1v8_25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mips_core
+Version: B-2008.09-SP4
+Date   : Tue Dec  7 14:13:47 2010
+****************************************
+
+
+Library(s) Used:
+
+    tt_1v8_25c (File: /nfs/spectre/u8/vlsi/UMC180/tt_1v8_25c.db)
+
+
+Operating Conditions: tt_1v8_25c   Library: tt_1v8_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   8.0938 mW   (90%)
+  Net Switching Power  = 902.9851 uW   (10%)
+                         ---------
+Total Dynamic Power    =   8.9968 mW  (100%)
+
+Cell Leakage Power     = 813.9000 nW
+
+1

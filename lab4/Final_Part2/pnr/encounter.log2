@@ -1,0 +1,85 @@
+Checking out Encounter license ...
+SOC_Encounter_GPS 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/local/apps/cadence/SOC/current/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Tue Dec  7 13:59:23 2010 (mem=62.2M) ---
+--- Running on flip.engr.oregonstate.edu (x86_64 w/Linux 2.6.18-194.11.4.el5) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "encounter.tcl" ...
+<CMD> loadLefFile /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef
+
+Loading Lef file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef...
+Set DBUPerIGU to M2 pitch 660.
+Initializing default via types and wire widths ...
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef at line 67848.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef at line 67848.
+**ERROR: (SOCLF-81):	No MANUFACTURINGGRID value was given. It is set to
+minimum LEF unit of 0.001 um. If this value is not right, a MANUFACTURINGGRID
+statement must be added in the technology lef file.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Tue Dec  7 13:59:39 2010
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM6 GENERATE
+viaInitial ends at Tue Dec  7 13:59:39 2010
+<CMD> loadConfig ./encounter.conf
+Reading config file - ./encounter.conf
+**ERROR: (SOCSYT-16038):	'/nfs/guille/u2/p/pawlowsr/472TA/test/vlogout/mips_core.gate.v' not found.
+**ERROR: (SOCSYT-16038):	'/nfs/guille/u2/p/pawlowsr/472TA/test/vlogout/mips_core.gate.v' not found.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+
+*** Memory Usage v0.144 (Current mem = 180.398M, initial mem = 62.227M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=180.4M) ***
+**ERROR: (SOCSYC-300):	Cell mips_core not found.
+**ERROR: (SOCVL-904):	Can't set top cell to "mips_core" because it doesn't exist.  Exiting Encounter!
+
+*** Memory Usage v0.144 (Current mem = 180.539M, initial mem = 62.227M) ***
+--- Ending "First Encounter" (totcpu=0:00:03.2, real=0:01:36, mem=180.5M) ---

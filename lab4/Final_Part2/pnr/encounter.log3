@@ -1,0 +1,610 @@
+Checking out Encounter license ...
+SOC_Encounter_GPS 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /usr/local/apps/cadence/SOC/current/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Tue Dec  7 14:17:40 2010 (mem=62.2M) ---
+--- Running on flip.engr.oregonstate.edu (x86_64 w/Linux 2.6.18-194.11.4.el5) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "encounter.tcl" ...
+<CMD> loadLefFile /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef
+
+Loading Lef file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef...
+Set DBUPerIGU to M2 pitch 660.
+Initializing default via types and wire widths ...
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef at line 67848.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /nfs/spectre/u8/vlsi/UMC180/umc18_6lm.lef at line 67848.
+**ERROR: (SOCLF-81):	No MANUFACTURINGGRID value was given. It is set to
+minimum LEF unit of 0.001 um. If this value is not right, a MANUFACTURINGGRID
+statement must be added in the technology lef file.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Tue Dec  7 14:17:55 2010
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM6 GENERATE
+viaInitial ends at Tue Dec  7 14:17:55 2010
+<CMD> loadConfig ./encounter.conf
+Reading config file - ./encounter.conf
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../vlogout/mips_core.gate.v'
+
+*** Memory Usage v0.144 (Current mem = 182.461M, initial mem = 62.227M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=182.5M) ***
+Set top cell to mips_core.
+Reading common timing library '/nfs/spectre/u8/vlsi/UMC180/tt_1v8_25c.lib' ...
+No function defined for cell 'HOLDX1'. The cell will only be used for analysis.
+ read 470 cells in library 'tt_1v8_25c' 
+*** End library_loading (cpu=0.03min, mem=13.5M, fe_cpu=0.08min, fe_mem=196.0M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell mips_core ...
+*** Netlist is unique.
+** info: there are 479 modules.
+** info: there are 5806 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 198.781M, initial mem = 62.227M) ***
+CTE reading timing constraint file '../vlogout/mips_core.sdc' ...
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 8 of File ../vlogout/mips_core.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.0 mem=200.4M) ***
+Total number of combinational cells: 265
+Total number of sequential cells: 186
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX1 BUFX12 BUFX16 BUFX20 BUFX4 BUFX3 BUFX8 BUFXL CLKBUFX2 CLKBUFX1 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX3 CLKBUFX8 CLKBUFXL
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX2 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX8 CLKINVXL INVX2 INVX1 INVX12 INVX16 INVX20 INVX3 INVXL INVX4 INVX8
+Total number of usable inverters: 18
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY2X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R180
+Horizontal Layer M1 offset = 280 (guessed)
+Vertical Layer M2 offset = 330 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+**ERROR: (SOCDB-1221):	A global net connection rule for connecting P/G pins of the pattern 'VSS' was specified.  But the connections cannot be made because there is no such pin in any cell.  Check the pin name pattern and make sure it is correct.
+<CMD> commitConfig
+**WARN: (SOCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> synthesizePowerPlan -totalPower 10.0
+License check succeded.
+
+**WARN: (SOCAPP-999):	Command synthesizePowerPlan is obsolete. Use addRing command and/or addStripe command to create power structures. The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts to use addRing command and/or addStripe command.
+Using voltage 1.8 V for all instances of net VDD.
+For Net VDD Instance Voltage Values:
+ 5806 instances at 1.8 V
+power supply: 1.8 V
+average power(default): 1.0000e+01 mW
+    average area based power(default): 1.0000e+01 mW
+    average user specified power(default): 0.0000e+00 mW
+*** Power analysis (cpu=0:00:00.2 mem=215.6M) ***
+**WARN: (SOCAPP-32):	Set pad current in EM Limits form to estimate number of pads required.
+INFO(APP-764): Finding the blocks to exclude while generating coreRing...
+
+INFO(APP-762): No block will be excluded while creating coreRing, please select blocks if you want to exclude any before pressing APPLY/OK.
+
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Auto merging with block rings is ON.
+Stripe generation is complete.
+
+The power planner created 9 wires.
+
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Auto merging with block rings is ON.
+Stripe generation is complete.
+
+The power planner created 1 wires.
+
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Auto merging with block rings is ON.
+Stripe generation is complete.
+
+The power planner created 2 wires.
+
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+*summary: 86 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.3) ***
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v0.845 (mem=216.2M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:03.1 mem=222.6M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:03.5 mem=228.9M) ***
+Options: timingDriven ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (SOCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=5720 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=6008 #term=23926 #term/net=3.98, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=267
+stdCell: 5720 single + 0 double + 0 multi
+Total standard cell length = 42.5905 (mm), area = 0.2147 (mm^2)
+Average module density = 0.698.
+Density for the design = 0.698.
+       = stdcell_area 64531 (214656 um^2) / alloc_area 92510 (307725 um^2).
+Pin Density = 0.371.
+            = total # of pins 23926 / total Instance area 64531.
+Iteration  1: Total net bbox = 1.481e-08 (4.01e-09 1.08e-08)
+              Est.  stn bbox = 1.481e-08 (4.01e-09 1.08e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 234.1M
+Iteration  2: Total net bbox = 1.481e-08 (4.01e-09 1.08e-08)
+              Est.  stn bbox = 1.481e-08 (4.01e-09 1.08e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 234.1M
+Iteration  3: Total net bbox = 4.377e+03 (2.10e+03 2.27e+03)
+              Est.  stn bbox = 4.377e+03 (2.10e+03 2.27e+03)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 234.6M
+Iteration  4: Total net bbox = 1.592e+05 (6.38e+04 9.54e+04)
+              Est.  stn bbox = 1.592e+05 (6.38e+04 9.54e+04)
+              cpu = 0:00:02.5 real = 0:00:06.0 mem = 234.6M
+Iteration  5: Total net bbox = 1.934e+05 (9.11e+04 1.02e+05)
+              Est.  stn bbox = 1.934e+05 (9.11e+04 1.02e+05)
+              cpu = 0:00:02.6 real = 0:00:05.0 mem = 234.6M
+Iteration  6: Total net bbox = 1.972e+05 (8.82e+04 1.09e+05)
+              Est.  stn bbox = 1.972e+05 (8.82e+04 1.09e+05)
+              cpu = 0:00:03.5 real = 0:00:07.0 mem = 234.8M
+Iteration  7: Total net bbox = 2.453e+05 (1.15e+05 1.31e+05)
+              Est.  stn bbox = 3.304e+05 (1.50e+05 1.80e+05)
+              cpu = 0:00:09.2 real = 0:00:18.0 mem = 233.5M
+Iteration  8: Total net bbox = 2.453e+05 (1.15e+05 1.31e+05)
+              Est.  stn bbox = 3.304e+05 (1.50e+05 1.80e+05)
+              cpu = 0:00:01.7 real = 0:00:03.0 mem = 233.5M
+Iteration  9: Total net bbox = 2.729e+05 (1.29e+05 1.44e+05)
+              Est.  stn bbox = 2.729e+05 (1.29e+05 1.44e+05)
+              cpu = 0:00:01.8 real = 0:00:03.0 mem = 235.7M
+Iteration 10: Total net bbox = 2.720e+05 (1.26e+05 1.46e+05)
+              Est.  stn bbox = 2.720e+05 (1.26e+05 1.46e+05)
+              cpu = 0:00:01.2 real = 0:00:03.0 mem = 235.7M
+Iteration 11: Total net bbox = 2.840e+05 (1.36e+05 1.48e+05)
+              Est.  stn bbox = 3.721e+05 (1.73e+05 1.99e+05)
+              cpu = 0:00:12.9 real = 0:00:26.0 mem = 234.7M
+Iteration 12: Total net bbox = 2.840e+05 (1.36e+05 1.48e+05)
+              Est.  stn bbox = 3.721e+05 (1.73e+05 1.99e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 234.7M
+Iteration 13: Total net bbox = 2.935e+05 (1.45e+05 1.48e+05)
+              Est.  stn bbox = 3.823e+05 (1.84e+05 1.99e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 234.7M
+*** cost = 2.935e+05 (1.45e+05 1.48e+05) (cpu for global=0:00:23.9) real=0:00:47.0***
+Core Placement runtime cpu: 0:00:22.0 real: 0:00:44.0
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 2.948e+05 = 1.462e+05 H + 1.486e+05 V
+wire length = 2.767e+05 = 1.299e+05 H + 1.468e+05 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        49.26 um
+  inst (U2958) with max move: (207.24, 206.64) -> (251.46, 201.6)
+  mean    (X+Y) =         8.53 um
+Total instances flipped : 115
+Total instances moved : 2011
+*** cpu=0:00:00.2   mem=234.7M  mem(used)=0.0M***
+Total net length = 2.769e+05 (1.299e+05 1.470e+05) (ext = 4.598e+04)
+*** End of Placement (cpu=0:00:28.1, real=0:00:56.0, mem=234.7M) ***
+default core: bins with density >  0.75 = 42.4 % ( 56 / 132 )
+*** Free Virtual Timing Model ...(mem=234.7M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:29, real = 0: 0:57, mem = 233.5M **
+<CMD> sroute
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Tue Dec  7 14:18:56 2010 ***
+Sroute/fcroute version 8.1.45 promoted on 09/01/2008.
+SPECIAL ROUTE ran on directory: /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/pnr
+SPECIAL ROUTE ran on machine: flip.engr.oregonstate.edu (Linux 2.6.18-194.11.4.el5 Xeon 2.83Ghz)
+
+Begin option processing ...
+(from .sroute_21946.conf) srouteConnectPowerBump set to false
+(from .sroute_21946.conf) routeSpecial set to true
+(from .sroute_21946.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_21946.conf) srouteFollowPadPin set to true
+(from .sroute_21946.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_21946.conf) sroutePadPinAllPorts set to true
+(from .sroute_21946.conf) sroutePreserveExistingRoutes set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 404.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 478 macros, 208 used
+Read in 5720 components
+  5720 core components: 0 unplaced, 5720 placed, 0 fixed
+Read in 291 physical pins
+  291 physical pins: 0 unplaced, 267 placed, 24 fixed
+Read in 267 nets
+Read in 2 special nets, 1 routed
+Read in 6011 terminals
+Begin power routing ...
+**WARN: (SOCSR-1254):	Net VDD does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1256):	Net VDD does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VDD does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1253):	Net VSS does not have standard cells to be routed. Please check net list.
+**WARN: (SOCSR-1254):	Net VSS does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net VSS does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net VSS does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VSS does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 56
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 56
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 404.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 291 io pins ...
+ Updating DB with 31 via definition ...
+
+sroute post-processing starts at Tue Dec  7 14:18:57 2010
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Tue Dec  7 14:18:57 2010
+
+**WARN: (SOCPP-589):	The power planner detected wires that are close to the standard cell area.
+**WARN: (SOCPP-590):	Turn on violation markers and run verifyGeometry to display violation details.
+
+sroute: Total CPU time used = 0:0:1
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 0.00 megs
+sroute: Total Peak Memory used = 233.51 megs
+<CMD> nanoRoute
+**WARN: (SOCSYT-13021):	Command nanoroute/nanoRoute is obsolete now. Replace it with the following commands:
+globalDetailRouteBatch
+**WARN: (SOCTCM-70):	Option "-timing_engine" for command getNanoRouteMode is obsolete and has been replaced by "-timingEngine". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-timingEngine".
+Writing DEF file '.spc_def.def', current time is Tue Dec  7 14:18:59 2010 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file '.spc_def.def' is written, current time is Tue Dec  7 14:18:59 2010 ...
+<CMD> nanoroute
+NanoRoute running ...
+#################  nanoroute  ################
+#Copyright (c) 1999 - 2008
+#Cadence Design Systems, Inc.
+#All rights reserved. This work may not be copied, modified, 
+#re-published, uploaded, executed, or distributed in any way, 
+#in any medium, whether in whole or in part, without prior 
+#written permission from Cadence Design Systems, Inc.
+#http://www.cadence.com
+#
+#Product Version : v08.10-p008.001 NR081027-0018/USR58-UB
+#Database Version : 2.30 {superthreading v1.11}
+#Checkout Date : 10/27/2008 00:18:09 from nru_02_10_usr58
+#Compiled Date : 10/27/2008 22:52:21 using tools-
+#Hostname : flip.engr.oregonstate.edu (x86_64 w/Linux 2.6.18-194.11.4.el5)
+#Current Working Directory : /nfs/farm/u2/r/rasmusto/ece472/lab4/Final_Part2/pnr
+#nanoroute Executable : /usr/local/apps/cadence/SOC/current/tools.lnx86/plato/bin/32bit/nanoroute
+#Current Date and Time : Tue Dec  7 14:19:00 2010
+#
+#WARNING (NRDB-51) SPECIAL_NET VSS is empty with no instance pin and special wire. NET with the same name will be routed but will not be connected to the empty SPECIAL_NET.
+
+pdi global_detail_route
+
+#Start global_detail_route on Tue Dec  7 14:19:02 2010
+#
+#PEF scale factor was set to 1.000000
+#WARNING (NREX-28) The height of the first routing layer METAL1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer METAL1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer METAL1
+#WARNING (NREX-5) No PEF file was imported. Not enough process information was provided either and default PEF database will be used.
+#Merging special wires...
+#
+#Start data preparation...
+#Auto generating G-grids with size=15 tracks, using layer METAL2's pitch = 0.640.
+#Using automatically generated G-grids.
+#
+#Data preparation is done.
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         990           0        3364    81.06%
+#  Metal 2        V         841           0        3364     0.00%
+#  Metal 3        H         982           0        3364     0.00%
+#  Metal 4        V         837           4        3364     0.00%
+#  Metal 5        H         982           0        3364     0.00%
+#  Metal 6        V         554           6        3364     0.00%
+#  --------------------------------------------------------------
+#  Total                   5186       0.26%       20184    13.51%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 27.08 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 27.86 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 35.13 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:01, elapsed time = 00:00:02, memory = 36.16 (Mb)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:01, elapsed time = 00:00:02, memory = 36.20 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded from the statistics)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)   OverCon
+#  ------------------------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2      3(0.09%)      2(0.06%)      2(0.06%)   (0.21%)
+#   Metal 3      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total      3(0.02%)      2(0.01%)      2(0.01%)   (0.04%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 3
+#
+#Complete Global Routing.
+#Total wire length = 395476 um.
+#Total half perimeter of net bounding box = 291496 um.
+#Total wire length on LAYER METAL1 = 29 um.
+#Total wire length on LAYER METAL2 = 106144 um.
+#Total wire length on LAYER METAL3 = 142212 um.
+#Total wire length on LAYER METAL4 = 94004 um.
+#Total wire length on LAYER METAL5 = 47260 um.
+#Total wire length on LAYER METAL6 = 5826 um.
+#Total number of vias = 38639
+#Up-Via Summary (total 38639):
+#           
+#-----------------------
+#  Metal 1        19241
+#  Metal 2        14650
+#  Metal 3         3559
+#  Metal 4         1101
+#  Metal 5           88
+#-----------------------
+#                 38639 
+#
+#Max overcon = 3 tracks.
+#Total overcon = 0.04%.
+#Worst layer Gcell overcon rate = 0.21%.
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:09
+#Increased memory = 5.31 (Mb)
+#Total memory = 29.34 (Mb)
+#Peak memory = 59.36 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+#    number of violations = 42
+#cpu time = 00:00:24, elapsed time = 00:00:46, memory = 36.18 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:02, memory = 36.18 (Mb)
+#Complete Detail Routing.
+#Total wire length = 405402 um.
+#Total half perimeter of net bounding box = 291496 um.
+#Total wire length on LAYER METAL1 = 11464 um.
+#Total wire length on LAYER METAL2 = 114209 um.
+#Total wire length on LAYER METAL3 = 144080 um.
+#Total wire length on LAYER METAL4 = 85841 um.
+#Total wire length on LAYER METAL5 = 44489 um.
+#Total wire length on LAYER METAL6 = 5319 um.
+#Total number of vias = 57035
+#Up-Via Summary (total 57035):
+#           
+#-----------------------
+#  Metal 1        24439
+#  Metal 2        24826
+#  Metal 3         6065
+#  Metal 4         1589
+#  Metal 5          116
+#-----------------------
+#                 57035 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#Total number of violations on LAYER METAL6 = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:25
+#Elapsed time = 00:00:48
+#Increased memory = 2.40 (Mb)
+#Total memory = 31.74 (Mb)
+#Peak memory = 59.36 (Mb)
+#
+#global_detail_route statistics:
+#Cpu time = 00:00:29
+#Elapsed time = 00:00:57
+#Increased memory = 7.71 (Mb)
+#Total memory = 31.74 (Mb)
+#Peak memory = 59.36 (Mb)
+#Number of warnings = 4
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete global_detail_route on Tue Dec  7 14:19:59 2010
+#
+
+pdi export_design -full -wire_extension_format .nano_def.def
+
+#Start export_design on Tue Dec  7 14:19:59 2010
+#
+#
+#export_design statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (Mb)
+#Total memory = 31.74 (Mb)
+#Peak memory = 59.36 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete export_design on Tue Dec  7 14:19:59 2010
+#
+
+pdi export_design -ref .nano_ref.ref
+
+#Start export_design on Tue Dec  7 14:19:59 2010
+#
+#
+#export_design statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (Mb)
+#Total memory = 31.74 (Mb)
+#Peak memory = 59.36 (Mb)
+#Number of warnings = 0
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete export_design on Tue Dec  7 14:19:59 2010
+#
+NANOROUTE finishes successfully
+pdi exit
+Reading DEF file '.nano_def.def', current time is Tue Dec  7 14:19:59 2010 ...
+WARNING (DEFPARS-7011): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The DEF parser will ignore this statement. See file .nano_def.def at line 3.
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+--- DIEAREA (0 0) (555334 554400)
+**WARN: (SOCDF-315):	Via 'VIA12' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA12_2Cut_W' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA12_2Cut_N' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA12_2Cut_S' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA23' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA23_2CUT_W' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA23_2CUT_N' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA23_2CUT_S' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA23ts' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA34' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA34_2Cut_W' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA34_2Cut_N' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA34_2Cut_S' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA34ts' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA45' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA45_2CUT_W' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA45_2CUT_N' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA45_2CUT_S' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA45ts' is already defined in LEF file, DEF via is ignored.
+**WARN: (SOCDF-315):	Via 'VIA56' is already defined in LEF file, DEF via is ignored.
+**WARN: (EMS-27):	Message (SOCDF-315) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+defIn read 10000 lines...
+defIn read 20000 lines...
+defIn read 30000 lines...
+defIn read 40000 lines...
+defIn read 50000 lines...
+defIn read 60000 lines...
+DEF file '.nano_def.def' is parsed, current time is Tue Dec  7 14:20:00 2010.
+Updating the floorplan ...
+Reading REF file '.nano_ref.ref' ...
+version 1.000000
+design mips_core
+status partiallyFrouted
+--- CASESENSITIVE ON
+--- DIVIDERCHAR '/'
+--- BUSBITCHARS '[]'
+--- UnitsPerDBU = 1.0000
+there are 58 columns
+there are 58 rows
+refIn read 10000 lines...
+there are 24 vias
+There are 0 violations
+REF file '.nano_ref.ref' is parsed.
+**ERROR: (SOCSYT-6692):	[encounter.tcl]: Invalid return code while executing "encounter.tcl"
+**ERROR: (SOCSYT-6693):	invalid command name "show"
+
+*** Memory Usage v0.144 (Current mem = 233.512M, initial mem = 62.227M) ***
+--- Ending "First Encounter" (totcpu=0:00:36.8, real=0:07:25, mem=233.5M) ---

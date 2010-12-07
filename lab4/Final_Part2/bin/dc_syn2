@@ -25,20 +25,20 @@ change_names -rules verilog -hierarchy
 
 ##########Compile the design#################
 
-compile
-#compile -ungroup_all
+#compile
+compile -ungroup_all
 
 # Make sure we are at the top level
 set current_design mips_core
 
 ################## Generate area and constraints reports on the design ##############
-#report_area    > ./reports/area.rpt
+report_area    > ./reports/area.rpt
 
 ######### Generate timing report for worst case path##############
-#report_timing  > reports/delay.rpt
-#report_timing
-#report_hierarchy  > reports/cells.rpt
-#report_hierarchy
+report_timing  > reports/delay.rpt
+report_timing
+report_hierarchy  > reports/cells.rpt
+report_hierarchy
 
 ########### Generate power report ############
 report_power	> reports/power.rpt

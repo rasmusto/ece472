@@ -1,0 +1,7 @@
+##############################################
+# The Power Analysis Report for VDD net      #
+##############################################
+power supply: 1.8 V
+average power(default): 1.0000e+01 mW
+    average area based power(default): 1.0000e+01 mW
+    average user specified power(default): 0.0000e+00 mW

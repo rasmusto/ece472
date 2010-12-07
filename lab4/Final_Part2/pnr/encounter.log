@@ -1,0 +1,20 @@
+Checking out Encounter license ...
+SOC_Encounter_GPS 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+**ERROR: (SOCSYT-468):	unknown argument --init
+Usage: encounter
+ 	[{ -ultra | -nru | -vdi [-N{1|2}] }]
+ 	[{ -fel | -fexl | -fegxl | -socel | -socexl | -socegxl }]
+ 	[-checkoutList "lic1 lic2 ..."]
+ 	[-cmd <file.cmd>]
+ 	[-config <file.conf>]
+ 	[-help]
+ 	[-init <file.tcl>]
+ 	[-libDefFile <file.defs>]
+ 	[-log <file.log>]
+ 	[-nowin | -win]
+ 	[-optionList "lic1 lic2 ..."]
+ 	[-overwrite]
+ 	[-version]
+ 	[-wait <t>]
+
